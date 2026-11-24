@@ -1,0 +1,5 @@
+00:00 +0: loading /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/app_test.dart
+00:00 +0: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/app_test.dart: Full offline database, persistent review, and mobile screens
+00:21 +1: loading /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/entry_preview_330_test.dart
+00:22 +1: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/entry_preview_330_test.dart: Meaning detail stays compact; search and navigation remain clear
+00:28 +2: All tests passed!

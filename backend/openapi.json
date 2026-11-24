@@ -1,0 +1,209 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Lingoy readiness API",
+    "version": "1.0.0",
+    "description": "Health is implemented; AI/OCR remain disabled. No user content is processed."
+  },
+  "servers": [
+    {
+      "url": "https://{domain}/api",
+      "variables": {
+        "domain": {
+          "default": "YOUR_DOMAIN"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/v1/health": {
+      "get": {
+        "summary": "Read readiness and explicit capabilities",
+        "responses": {
+          "200": {
+            "description": "Readiness service is healthy; AI/OCR may still be disabled",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "api_version",
+                    "service",
+                    "status",
+                    "capabilities"
+                  ],
+                  "properties": {
+                    "api_version": {
+                      "const": "1"
+                    },
+                    "service": {
+                      "const": "lingoy"
+                    },
+                    "status": {
+                      "const": "ready"
+                    },
+                    "capabilities": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "translation",
+                        "grammar",
+                        "image_translation"
+                      ],
+                      "properties": {
+                        "translation": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "grammar": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "image_translation": {
+                          "type": "boolean",
+                          "default": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/translate": {
+      "post": {
+        "summary": "Reserved future endpoint; currently closed",
+        "x-lingoy-status": "disabled",
+        "responses": {
+          "503": {
+            "description": "Service is disabled; no AI/OCR provider connected",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "required": [
+                        "code",
+                        "message"
+                      ],
+                      "properties": {
+                        "code": {
+                          "const": "feature_disabled"
+                        },
+                        "message": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Request exceeds 10 MiB"
+          },
+          "405": {
+            "description": "POST required"
+          }
+        }
+      }
+    },
+    "/v1/grammar": {
+      "post": {
+        "summary": "Reserved future endpoint; currently closed",
+        "x-lingoy-status": "disabled",
+        "responses": {
+          "503": {
+            "description": "Service is disabled; no AI/OCR provider connected",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "required": [
+                        "code",
+                        "message"
+                      ],
+                      "properties": {
+                        "code": {
+                          "const": "feature_disabled"
+                        },
+                        "message": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Request exceeds 10 MiB"
+          },
+          "405": {
+            "description": "POST required"
+          }
+        }
+      }
+    },
+    "/v1/image-translate": {
+      "post": {
+        "summary": "Reserved future endpoint; currently closed",
+        "x-lingoy-status": "disabled",
+        "responses": {
+          "503": {
+            "description": "Service is disabled; no AI/OCR provider connected",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "required": [
+                        "code",
+                        "message"
+                      ],
+                      "properties": {
+                        "code": {
+                          "const": "feature_disabled"
+                        },
+                        "message": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Request exceeds 10 MiB"
+          },
+          "405": {
+            "description": "POST required"
+          }
+        }
+      }
+    }
+  }
+}

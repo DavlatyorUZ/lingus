@@ -1,0 +1,78 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> lingoy-api@3.5.0 test
+> node --test test/*.test.js
+
+✔ email code, cooldown, five attempts, expiry and one-time consumption (1050.809473ms)
+✔ password reset revokes old access and refresh; new password works and code cannot replay (1518.462041ms)
+✔ profile password change checks current password and invalidates all sessions (1774.376107ms)
+✔ CSRF, origin, login gates, refresh rotation and replay defense (354.800556ms)
+✔ dictionary fallback persists translations; saved words are account scoped and idempotent (673.419751ms)
+✔ AI cache avoids repeated provider calls; daily limit and image validation (813.099002ms)
+✔ AI provider failure refunds quota (375.378105ms)
+✔ Google merges verified email and mobile ticket is verifier-bound and one-time (355.277414ms)
+✔ Google-only account sets a password with a one-time email code and revokes sessions (675.218337ms)
+✔ login started before password reset cannot create a session with the old password (782.179226ms)
+✔ password change in flight cannot overwrite a newer password reset (2025.727703ms)
+{"event":"email_delivery_failed","purpose":"register","cause":"smtp_error"}
+✔ SMTP failure permits retry without clearing wrong-code attempts (1024.707496ms)
+{"event":"email_delivery_failed","purpose":"register","cause":"smtp_error"}
+✔ a delayed SMTP failure cannot change the cooldown of a newer email code (1025.857762ms)
+✔ production cookies and headers enforce secure browser boundaries (421.504377ms)
+✔ SQL-shaped and invalid input cannot bypass accounts or damage the dictionary (358.649612ms)
+✔ valid images are resized to JPEG while unsupported SVG is rejected before AI (397.376368ms)
+✔ Google callback rejects another browser binding and invalid nonce (25.502694ms)
+✔ expired, foreign-issuer and foreign-audience tokens cannot access an account (349.389717ms)
+✔ download routes expose only APK, checksum and release metadata, with no server paths (56.36136ms)
+✔ editorial phrase meanings take priority over incorrect inherited translations (20.729476ms)
+✔ Google root redirect uses a root-scoped binding cookie and preserves the configured token redirect (21.746731ms)
+✔ Google root cancellation consumes state, clears the matching cookie and does not exchange tokens (19.73174ms)
+✔ Google root callback retains mobile one-time ticket verification and cancels pending tickets promptly (25.013441ms)
+✔ Dictionary aliases, primary synonym sense and new canonical slang survive API sync (333.267481ms)
+✔ Uzbek reverse search ranks complete glosses before longer prefix words (24.964037ms)
+✔ release deployment verifies the public site before saving the PM2 state (156.807335ms)
+✔ a failed public check rolls the release pointer back and does not save the failed process state (127.995333ms)
+✔ the initial installer can defer public checks until its HTTPS certificate exists (94.373113ms)
+✔ SMTP diagnostics distinguish DNS, credentials, TLS and blocked connections without leaking errors (1.018147ms)
+✔ default live check verifies SMTP without sending an unsolicited message (0.428031ms)
+✔ an explicitly requested accepted message is not reported as inbox delivery (0.602374ms)
+✔ failed SMTP authentication blocks mail submission while AI is still independently checked (0.41321ms)
+✔ a recipient rejected after authentication cannot appear as successful submission (0.378318ms)
+✔ SMTP-only diagnostics never invoke the AI provider and show it as skipped (0.232679ms)
+✔ AI failures and empty model responses produce safe failure reports (0.452448ms)
+✔ invalid or duplicate CLI recipients are rejected before any network request (1.872457ms)
+✔ missing everyday and vulgar vocabulary have matching offline and API definitions (1.230816ms)
+✔ All editorial meanings match across server and native client (1.005498ms)
+✔ Clinical vocabulary stays neutral and distinct from vulgar usage (0.383114ms)
+✔ Synonyms stay in the selected meaning and exclude self and duplicates (2.026759ms)
+✔ An imported thousand-item group never renders more than six synonyms (1.294621ms)
+✔ Examples combine sources without duplicates and prefer statement, negative and question (0.921302ms)
+✔ Every real sense respects presentation limits and synonym membership (645.912997ms)
+✔ Every quiz meaning and answer is linked to its exact dictionary sense (507.391213ms)
+✔ Gmail transport preserves TLS validation on 465 and STARTTLS 587 (1.529143ms)
+✔ A resolved SMTP response without accepted recipient is a delivery failure (0.602133ms)
+✔ SMTP port input rejects arbitrary outbound endpoints (0.400942ms)
+✔ restore rejects a partial users-only database before stopping the application (65.135007ms)
+✔ healthcheck waits for a restarting backend instead of reporting a false restore failure (2123.933563ms)
+✔ backup rejects foreign-key damage and publishes no usable backup file (53.521614ms)
+✔ backup and restore recover the original account while retaining the previous database (183.117823ms)
+✔ failed post-restore health recovers the database that was active before restore (1204.56735ms)
+✔ restore rejects a symlink escaping the private backup directory (11.366594ms)
+✔ online SQLite backup includes committed WAL data while the writer stays open (41.005792ms)
+✔ release preflight checks actual database, PWA and APK integrity without exposing credentials (747.601785ms)
+✔ unsafe production bindings and inconsistent OAuth redirect stop deployment (584.566796ms)
+✔ A normal Gmail password cannot pass production email configuration checks (904.380912ms)
+✔ A valid APK checksum cannot hide an older app in a newer server release (944.402934ms)
+✔ production check validates all public endpoints but retains manual Google and inbox checks (7.979817ms)
+✔ an older running backend cannot pass a new release production check (2.125077ms)
+✔ foreign redirects and an incorrect APK size fail without following another site (1.453801ms)
+✔ invalid production configuration stops checks before any outbound request (0.188633ms)
+✔ network or TLS failure never exposes raw exception data or masquerades as a verified endpoint (0.387761ms)
+ℹ tests 63
+ℹ suites 0
+ℹ pass 63
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15062.33034

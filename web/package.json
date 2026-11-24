@@ -1,0 +1,14 @@
+{
+  "name": "lingoy-web",
+  "version": "3.5.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node dev.mjs",
+    "build": "node build.mjs",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  }
+}

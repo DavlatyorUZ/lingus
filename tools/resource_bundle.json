@@ -1,0 +1,25 @@
+{
+  "version": "3.5.0",
+  "url": "https://github.com/DavlatyorUZ/lingus/releases/download/v3.5.0/Lingoy_Server_3.5.0.zip",
+  "sha256": "d532aaf589803b5d36ce00759c55190fe7dc1e3e527c3a908c4399e31f72b4dd",
+  "bytes": 416245110,
+  "resource_roots": [
+    "data/",
+    "mobile/assets/",
+    "mobile/test/goldens/",
+    "mobile/test/motion_frames/",
+    "web/dist/",
+    "web/icons/",
+    "downloads/"
+  ],
+  "binary_paths": [
+    "mobile/android/app/src/main/res/drawable-nodpi/lingoy_icon_art.png",
+    "mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "mobile/android/gradle/wrapper/gradle-wrapper.jar",
+    "server/assets/lingoy-logo.png"
+  ]
+}

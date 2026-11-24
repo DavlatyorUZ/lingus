@@ -1,0 +1,31 @@
+{
+  "name": "lingoy-api",
+  "version": "3.5.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "test": "node --test test/*.test.js",
+    "build": "node --check src/app.js && node --check src/auth.js && node --check src/services.js && node --check src/diagnostics.js && node --check src/check-live.js && node --check src/production-checks.js && node --check src/check-production.js && node --check src/version.js",
+    "migrate": "node --env-file-if-exists=.env src/migrate.js",
+    "check:live": "node --env-file-if-exists=.env src/check-live.js",
+    "preflight": "node --env-file-if-exists=.env src/preflight.js",
+    "check:production": "node --env-file-if-exists=.env src/check-production.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.2.1",
+    "google-auth-library": "^10.5.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "10.6.1",
+    "sharp": "0.35.5",
+    "zod": "^4.1.12"
+  }
+}

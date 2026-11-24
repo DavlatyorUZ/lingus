@@ -1,0 +1,21 @@
+{
+  "photo_files": 209,
+  "photographic_words": 217,
+  "version": "3.5.0+22",
+  "apk_bytes": 80076057,
+  "apk_sha256": "352e219cc825a5ba12a37c87f33c669b3ab10b94ca482b6b9c1a36cd4867d898",
+  "illustrated_entries": 10000,
+  "starter_entries": 192,
+  "new_entries": 9808,
+  "single_word_headwords": 7651,
+  "phrases": 2349,
+  "vector_picture_files": 4265,
+  "verified_runtime_files": 4554,
+  "abi": [
+    "arm64-v8a"
+  ],
+  "dictionary_integrity": "ok",
+  "all_mapping_sense_memberships": "verified",
+  "all_source_svg_checksums": "verified",
+  "all_runtime_asset_checksums": "verified"
+}

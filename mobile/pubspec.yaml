@@ -1,0 +1,74 @@
+name: lingoy
+description: Bepul oflayn inglizcha-ozbekcha lugat va til organish ilovasi.
+publish_to: none
+version: 3.5.0+22
+environment:
+  sdk: ^3.14.0
+dependencies:
+  flutter:
+    sdk: flutter
+  crypto: ^3.0.6
+  flutter_secure_storage: ^10.0.0
+  image: ^4.5.4
+  flutter_svg: ^2.4.0
+  vector_graphics: ^1.3.1
+  material_ui: ^1.11.0
+  path_provider: ^2.1.6
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  flutter_tts: ^4.2.3
+  shared_preferences: ^2.5.3
+  file_picker: ^10.3.6
+  image_picker: ^1.2.4
+  share_plus: ^12.0.1
+  cross_file: ^0.3.5
+  csv: ^6.0.0
+  url_launcher: ^6.3.3
+dev_dependencies:
+  sqflite_common_ffi: ^2.3.6
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  vector_graphics_compiler: ^1.3.1
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/dictionary.db
+    - assets/coverage.json
+    - assets/licenses.txt
+    - assets/lucide-LICENSE.txt
+    - assets/icons/
+    - assets/sense_examples.json
+    - assets/morph_exceptions.json
+    - assets/dictionary_revision.json
+    - assets/quiz_bank.json
+    - assets/spelling_aliases.json
+    - assets/informal_glosses.json
+    - assets/base_glosses.json
+    - assets/sense_priority.json
+    - assets/lingoy_icon.png
+    - assets/picture_index.json
+    - assets/photo_credits.txt
+    - assets/photo_index.json
+    - assets/pictures/photos/
+    - assets/collections/
+    - assets/art/
+    - assets/starter_vectors.json
+    - assets/pictures/vectors/
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans.ttf
+    - family: Fraunces
+      fonts:
+        - asset: assets/fonts/Fraunces.ttf
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope.ttf
+
+hooks:
+  user_defines:
+    sqlite3:
+      source:
+        linux: system
+        default: sqlite3
