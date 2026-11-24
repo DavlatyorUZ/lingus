@@ -1,0 +1,47 @@
+00:00 +0: loading /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_picker_test.dart
+00:00 +0: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_picker_test.dart: Search multi-select starts with one word and keeps selection across searches
+30-word regression: preparing saved words
+30-word regression: saved 30 words
+30-word regression: picker loaded
+30-word regression: selecting 417
+30-word regression: selecting 418
+30-word regression: selecting 520
+30-word regression: selecting 531
+30-word regression: selecting 533
+30-word regression: selecting 555
+30-word regression: selecting 560
+30-word regression: selecting 581
+30-word regression: selecting 601
+30-word regression: selecting 605
+30-word regression: selecting 611
+30-word regression: selecting 615
+30-word regression: selecting 633
+30-word regression: selecting 635
+30-word regression: selecting 648
+30-word regression: selecting 651
+30-word regression: selecting 654
+30-word regression: selecting 689
+30-word regression: selecting 705
+30-word regression: selecting 723
+30-word regression: selecting 726
+30-word regression: selecting 727
+30-word regression: selecting 738
+30-word regression: selecting 752
+30-word regression: selecting 762
+30-word regression: selecting 794
+30-word regression: selecting 804
+30-word regression: selecting 815
+30-word regression: selecting 832
+30-word regression: selecting 833
+30-word regression: all selected
+00:39 +1: loading /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_game_test.dart
+00:40 +1: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_game_test.dart: (setUpAll)
+00:40 +1: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_game_test.dart: Start has usable verb synonyms and separately selectable noun meanings
+00:42 +2: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_game_test.dart: Synonym options exclude legitimate synonyms and use close spellings
+00:44 +3: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_game_test.dart: Translate tests meaning and non-word spelling, in all four positions
+00:48 +4: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_game_test.dart: One word can start, repeated prompts and synonym-free words are handled
+00:48 +5: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_game_test.dart: Ordinary questions never add a vulgar surprise distractor
+00:48 +6: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_game_test.dart: Polysemous answers cannot borrow an unrelated primary gloss
+00:48 +7: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_game_test.dart: Correct answer shows only Continue; wrong answer explains and cannot score twice
+00:49 +8: /workspace/scratch/aa446bc551fe/project/Lingoy/mobile/test/study_game_test.dart: (tearDownAll)
+00:50 +8: All tests passed!

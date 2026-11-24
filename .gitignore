@@ -1,0 +1,41 @@
+# Private configuration and keys
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.hprof
+# Dependencies, generated state, runtime user data
+node_modules/
+build/
+.dart_tool/
+.gradle/
+.cxx/
+.kotlin/
+__pycache__/
+*.pyc
+*.log
+.cache/
+server/data/
+web/.preview/
+mobile/android/local.properties
+# Versioned binary resources come from the matching Release
+/data/
+/mobile/assets/*
+!/mobile/assets/icons/
+/mobile/test/goldens/
+/mobile/test/motion_frames/
+/web/dist/
+/web/icons/
+/downloads/
+/mobile/android/app/src/main/res/drawable-nodpi/lingoy_icon_art.png
+/mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+/mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+/mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+/mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+/mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+/mobile/android/gradle/wrapper/gradle-wrapper.jar
+/server/assets/lingoy-logo.png

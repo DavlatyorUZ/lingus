@@ -1,0 +1,31 @@
+{
+  "id": "/",
+  "name": "Lingoy — lug‘at va tarjima",
+  "short_name": "Lingoy",
+  "lang": "uz",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#111019",
+  "theme_color": "#211b29",
+  "icons": [
+    {
+      "src": "/icons/lingoy-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/lingoy-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/lingoy-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

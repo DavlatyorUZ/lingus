@@ -1,0 +1,86 @@
+{
+  "version": "3.5.0",
+  "build": 22,
+  "date": "2026-11-24",
+  "changes": [
+    "Bottom search capsule and EN/UZ voice search",
+    "Account-scoped explicitly viewed words instead of alphabetical idle results",
+    "Pinned game footer with actual thirty-word and keyboard hit test",
+    "Compact account actions, statistics, word cards and grammar chips",
+    "Body extends beneath floating navigation",
+    "Equivalent web layout plus keyboard viewport tracking",
+    "Earlier cheap candidate filtering preserves lexical exclusions"
+  ],
+  "checks": {
+    "flutter_analyze": "pass: no issues",
+    "native_regressions": {
+      "thirty_word_actual_selection_and_launch": "pass at 320x700, 200% text, 280px keyboard inset",
+      "account_history_isolation_and_persistence": "pass",
+      "voice_language_cancel_and_errors": "pass: 2 tests",
+      "signed_in_profile_320_double_text": "pass",
+      "game_semantics": "pass: all 7 existing game tests after optimization",
+      "updated_navigation_and_dictionary_position": "pass"
+    },
+    "web": "34 / 34 passed; final PWA built",
+    "browser": "desktop search, explicit recent history, 320/390px layout, 30 checkbox selections and actual game launch verified",
+    "smtp": {
+      "configured": true,
+      "auth_verified": false,
+      "result": "smtp_dns in this executor; no diagnostic email sent"
+    },
+    "deployment": "Not performed",
+    "physical_android": "Not performed",
+    "backend": "63 / 63 passed",
+    "preflight": "14 / 14 configuration, artifact and release checks passed; SMTP delivery remains unverified",
+    "native_visuals": "Updated app, dictionary, navigation and profile render assertions passed; 320px / 200% signed-in account actions passed",
+    "credential_isolation": "App Password absent from final APK and web JavaScript"
+  },
+  "build_notes": [
+    "Cold build daemon was killed while heavy checks overlapped.",
+    "A reduced 384MB metaspace hit Android lint class-loading limit. Final build used 1536MB Java heap, 768MB metaspace, 2 processors and 1 worker; release build and Android lint passed."
+  ],
+  "external_pending": [
+    "VPS deploy and public version check",
+    "Real Gmail code receipt and password recovery",
+    "Physical Android voice recognition and upgrade",
+    "Real Google login"
+  ],
+  "apk": {
+    "android_badging": "package: name='uz.lingoy.offline' versionCode='2022' versionName='3.5.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+    "same_signing_certificate": true,
+    "credential_absent_from_apk_and_web": true,
+    "photo_files": 209,
+    "photographic_words": 217,
+    "version": "3.5.0+22",
+    "apk_bytes": 80076057,
+    "apk_sha256": "352e219cc825a5ba12a37c87f33c669b3ab10b94ca482b6b9c1a36cd4867d898",
+    "illustrated_entries": 10000,
+    "starter_entries": 192,
+    "new_entries": 9808,
+    "single_word_headwords": 7651,
+    "phrases": 2349,
+    "vector_picture_files": 4265,
+    "verified_runtime_files": 4554,
+    "abi": [
+      "arm64-v8a"
+    ],
+    "dictionary_integrity": "ok",
+    "all_mapping_sense_memberships": "verified",
+    "all_source_svg_checksums": "verified",
+    "all_runtime_asset_checksums": "verified"
+  },
+  "toolchain": {
+    "flutter": "3.50.1",
+    "dart": "3.14.0",
+    "jdk": 21,
+    "compile_sdk": 36,
+    "ndk": "28.2.13676358"
+  },
+  "distribution": {
+    "target": "GitHub",
+    "secrets_included": false,
+    "signing_key_included": false,
+    "configuration_required": "Create server/.env from .env.example or retain existing VPS shared/.env",
+    "original_apk_unchanged": true
+  }
+}

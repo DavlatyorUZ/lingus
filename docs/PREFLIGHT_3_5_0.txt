@@ -1,0 +1,71 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> lingoy-api@3.5.0 preflight
+> node --env-file-if-exists=.env src/preflight.js
+
+{
+  "ready": true,
+  "checks": [
+    {
+      "name": "node_24_or_newer",
+      "status": "pass"
+    },
+    {
+      "name": "production_https_origin",
+      "status": "pass"
+    },
+    {
+      "name": "private_backend_binding",
+      "status": "pass"
+    },
+    {
+      "name": "daily_limit",
+      "status": "pass"
+    },
+    {
+      "name": "managed_database_path",
+      "status": "pass"
+    },
+    {
+      "name": "jwt_secret",
+      "status": "pass"
+    },
+    {
+      "name": "gmail_configured",
+      "status": "pass"
+    },
+    {
+      "name": "google_redirect",
+      "status": "pass"
+    },
+    {
+      "name": "gmail_app_password_format",
+      "status": "pass"
+    },
+    {
+      "name": "ai_configured",
+      "status": "pass"
+    },
+    {
+      "name": "dictionary_integrity",
+      "status": "pass"
+    },
+    {
+      "name": "pwa_build",
+      "status": "pass"
+    },
+    {
+      "name": "apk_checksum",
+      "status": "pass"
+    },
+    {
+      "name": "release_version",
+      "status": "pass"
+    }
+  ],
+  "external_pending": [
+    "Gmail delivery",
+    "Google consent and actual sign-in",
+    "VPS DNS and HTTPS"
+  ]
+}

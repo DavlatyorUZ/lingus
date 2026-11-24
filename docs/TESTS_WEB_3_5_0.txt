@@ -1,0 +1,47 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> lingoy-web@3.5.0 test
+> node --test test/*.test.js
+
+✔ camera requests video only, prefers the rear camera, and releases every track (1.351437ms)
+✔ closing a pending permission prompt releases a late stream without opening the preview (0.275963ms)
+✔ playback failure stops the camera and does not retain the stream (0.823054ms)
+✔ permission, missing device and busy camera errors are understandable without exposing internals (0.240972ms)
+✔ an unready camera cannot produce or upload a frame (0.329845ms)
+✔ a captured frame is bounded to 1600px and encoded locally as JPEG (1.948571ms)
+✔ closing while JPEG encoding is pending discards the frame (1.343615ms)
+✔ all quiz questions and options belong to saved words (8.820436ms)
+✔ insufficient or duplicate meanings cannot start a game (1.123875ms)
+✔ SRS failure uses ten-minute retry; success advances (0.391958ms)
+✔ offline grammar preserves capitalization and reports exact original spans (1.127601ms)
+✔ untrusted names, folders and AI text remain inert HTML (0.854381ms)
+✔ CSV export neutralizes spreadsheet formulas, including leading whitespace (0.339749ms)
+✔ early correct game answers cannot inflate future review intervals (1.659919ms)
+✔ Only explicitly viewed words enter recents; refresh order and bookmarks remain independent (3.592497ms)
+✔ A full history store cannot block opening a word (0.484977ms)
+✔ same-account token refresh preserves the current screen and unsent input (11.299954ms)
+✔ saved-word changes cannot be replayed into a different account after refresh (6.496482ms)
+✔ another tab logging out immediately clears this tab account view (2.718376ms)
+✔ corrupt cached profiles do not break application startup (8.299966ms)
+✔ account changes during CSRF loading cannot send a queued mutation (4.180549ms)
+✔ Synonym distractors are orthographically close and exclude all known true synonyms (1016.381597ms)
+✔ Translate includes a real confusable and a non-word misspelling, with correct spelling feedback (2506.515996ms)
+✔ single selected word works; empty, synonym-free, duplicate prompts and sets are handled (98.235833ms)
+✔ dictionary-linked selection uses a single sense for answers while excluding all valid senses (36.194634ms)
+✔ sample data and corpus retain all original headwords for typo validation (0.325829ms)
+✔ An ordinary selected word never receives a vulgar surprise distractor (322.890479ms)
+✔ Polysemous synonyms cannot borrow an unrelated translation; an empty sense stays empty (0.409784ms)
+✔ Start exposes verb synonyms even when the first noun sense is a singleton (1186.253792ms)
+✔ A visual-only keyboard lifts the dock and shrinks game choices (3.544705ms)
+✔ Content resize, browser chrome, pinch zoom and blur cannot leave a false keyboard offset (0.45375ms)
+✔ Voice uses the selected EN/UZ language and returns a trimmed result (1.725858ms)
+✔ Cancellation and no speech do not alter a query (0.7934ms)
+✔ Denied and unsupported microphones have readable fallback messages (1.26061ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5885.61437
