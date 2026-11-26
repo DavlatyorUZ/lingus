@@ -1,5 +1,5 @@
 # lingus
 
-Lingoy Server 3.9.0 package.
+Lingoy Server 3.10.0 package.
 
-- Lingoy_Server_3.9.0.zip
+- Lingoy_Server_3.10.0.zip
